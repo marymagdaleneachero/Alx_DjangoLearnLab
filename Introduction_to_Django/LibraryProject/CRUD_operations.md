@@ -12,7 +12,7 @@ new_book
 Book.objects.all()
 
 # Retrieve first book and display all attributes
-book = Book.objects.first()
+book = Book.objects.get(title="1984")
 book.title, book.author, book.publication_year
 
 # <QuerySet [<Book: 1984>]>
